@@ -1,0 +1,6 @@
+from roboflow import Roboflow
+
+rf      = Roboflow(api_key="Tm8QzQ29DfxP7PMmo9uB")
+project = rf.workspace("hasna-nur-saudah").project("datasetcapstonep")
+version = project.version(2)
+dataset = version.download("yolov8", location="/content/datasetcapstonep")
